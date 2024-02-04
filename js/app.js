@@ -1,6 +1,7 @@
 loginForm=document.querySelector("#login_form");
 loginInput=document.querySelector("#login_form input");
 greeting=document.querySelector("#greeting");
+todo=document.querySelector("#todo_form");
 
 const HIDDEN_CLASSNAME="hidden";
 const USERNAME="username";
@@ -16,7 +17,7 @@ function onLoginFormHandler(event){
 function loginComplete(userName){
     loginForm.classList.add(HIDDEN_CLASSNAME);
     greeting.classList.remove(HIDDEN_CLASSNAME);
-    
+    todo.classList.remove(HIDDEN_CLASSNAME);
     greeting.innerText=`Hello ${userName}`;
 }
 const savedUserName=localStorage.getItem(USERNAME);

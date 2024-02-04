@@ -3,7 +3,7 @@
 }
 body{
     
-    font-family: "Courgette";
+    font-family: "Pacifico";
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,6 +20,7 @@ body{
 button{
     background-color: #ffffff00;
     border: #ffffff00;
+    color: white;
 }
 h2{
     color: white;
@@ -39,7 +40,7 @@ h2{
     border-radius: 10px;
 }
 #clock{
-    font-family: "Electrolize";
+    
     font-size: 12vh; 
     
     position: absolute;
@@ -49,15 +50,70 @@ h2{
   
 }
 
-#greeting{
+#greeting {
     position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#login_form{
+    font-size: 6vh;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #login_form {
     position: absolute;
-  top: 35%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  input {
+    position: absolute;
+    top: calc(30% + 13vh);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vh;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    outline: none;
+    width: 30vw;
+    border-color: #e1e0e0;
+    color: white;
+    font-family: "Pacifico";
+  }
+  
+  input::placeholder {
+    color: #e1e0e0;
+    font-family: "Pacifico";
+  }
+  input:focus::placeholder {
+    color: #e1e0e0; /* placeholder 클릭 시에도 흰색으로 보이도록 설정 */
+  }
+  
+  #todo_list {
+    position: absolute;
+  top: calc(45% + 4vh);
   left: 50%;
-  transform: translate(-50%, -50%);
-}
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: flex; /* Flexbox를 사용하여 정렬 */
+  flex-direction: column; /* 세로로 정렬 */
+  align-items: center; /* 가운데 정렬 */
+  
+  }
+  
+  #todo_list li {
+    
+    margin: 0 10px;
+  }
+  #weather {
+    position: absolute;
+    bottom: calc(5% + 1vh);
+    right: 10%;
+    transform: translateX(0%);
+  }
+
+  
+  
